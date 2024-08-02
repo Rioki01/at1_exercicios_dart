@@ -1,0 +1,9 @@
+/*7) Faça um programa que receba as notas, no caso, n1, n2 e n3, que são as três notas de um aluno. A seguir, calcule a média ponderada do aluno, sabendo que a nota n1 tem peso 2, a nota n2 tem peso 3 e a nota n3 tem peso 5. Considere que cada nota pode ir de 0 até 10. Utilize sempre com uma casa decimal.*/
+void main() {
+  int nota1 = 10;
+  int nota2 = 10;
+  int nota3 = 10;
+
+  double mediaPonderada = ((nota1 * 2)+(nota2 * 3)+(nota3 * 5))/10;
+  print("A nota do aluno é $mediaPonderada");
+}
