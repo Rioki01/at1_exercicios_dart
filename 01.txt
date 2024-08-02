@@ -1,0 +1,25 @@
+/**1) Faça uma função que dado um número, retorne à classificação do ângulo. (Ângulo agudo: ângulo com medida maior que 0° menor que 90°; Ângulo reto: ângulo com medida igual a 90°;
+Ângulo obtuso: ângulo com medida maior que 90° e menor que 180°; 
+Ângulo raso: ângulo com medida igual a 0° ou 180°; 
+Ângulo Côncavo: ângulo com medida entre 180° e 360°;
+Ângulo completo: ângulo com medida igual a 360°).***/
+
+void main() {
+  double angulo = 180;
+
+  if (angulo > 0 && angulo <= 89) {
+    print("O angulo é agudo.");
+  } else if (angulo == 90) {
+    print("O angulo é reto.");
+  } else if (angulo >= 91 && angulo <= 179) {
+    print("o angulo é obtuso.");
+  } else if (angulo == 0 || angulo == 180) {
+    print("o angulo é raso");
+  } else if (angulo >= 181 && angulo < 359) {
+    print("o angulo é côncavo");
+  } else if (angulo == 360) {
+    print("o angulo é completo°");
+  }else{
+    print("o angulo é invalido");
+  }
+}
