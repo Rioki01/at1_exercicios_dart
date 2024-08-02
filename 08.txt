@@ -1,0 +1,18 @@
+/*8) Faça um programa para realizar a conversão entre escala de temperaturas. O algoritmo deverá realizar as conversões como segue:
+1. Celsius -> Farenheit
+2. Farenheit -> Celsius
+3. Celsius -> Kelvin
+4. Kelvin -> Celsius*/
+void main() {
+  double temperatura = 15;
+  print("A temperatura em Celsius é $temperatura C");
+
+  double fahrenheit = (temperatura - 32) / 1.8;
+  print("A temperatura de Celsius em Fahrenheit é $fahrenheit F");
+  double kelvin = temperatura + 273.15;
+  print("A temperatura de Celsius para Kelvin é $kelvin K");
+  double kelvinCelcius = kelvin - 273.15;
+  print("A temperatura de Kelvin para Celcius é $kelvinCelcius C");
+}
+
+  
