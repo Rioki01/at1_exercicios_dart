@@ -1,0 +1,12 @@
+/*6) Crie um programa que armazene os pesos de um grupo 5 pessoas depois exibe em tela a média de
+peso.*/
+void main(){
+  int peso1 = 50;
+  int peso2 = 50;
+  int peso3 = 50;
+  int peso4 = 50;
+  int peso5 = 50;
+  
+  double media = (peso1+peso2+peso3+peso4+peso5)/5;
+  print("A media dos pesos é $media");
+  }
