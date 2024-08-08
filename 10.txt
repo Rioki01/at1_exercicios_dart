@@ -1,0 +1,14 @@
+/*10 -Faça um programa que receba dois números. Realize a soma dos dois números. Caso a soma dos números seja par, multiplique esta soma por 3 e apresente na saída. Caso contrário apresente apenas a soma dos dois números.*/
+
+int numero1 = 2;
+int numero2 = 5;
+int soma = 0;
+
+void main() {
+  soma = numero1 + numero2;
+  if (soma % 2 == 0) {
+    print(soma *= 3);
+  } else {
+    print(soma);
+  }
+}
