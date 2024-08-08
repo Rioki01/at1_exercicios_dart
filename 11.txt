@@ -1,0 +1,61 @@
+/*11 -Crie um programa que contemple os principais conceitos de orientação a objetos (classe, objeto, métodos, construtores, encapsulamento, herança, sobrescrita, modificadores e classes abstratas), o tema da aplicação será de escolha do aluno, será necessário criar instâncias no método principal para testar as funcionalidades implementadas.*/
+
+class Animal {
+  String nome = '';
+  String tipo = '';
+  int _idade = 0;
+
+  Animal(this.nome, this._idade, this.tipo);
+
+  //Encapsulamento metodo GET
+  int get idade => _idade;
+  //Encapsulamento metodo SET
+  set idade(int idade) {
+    this._idade = idade;
+  }
+
+  @override
+  void barulho() {
+    print("Não sabemos que barulho $nome faz...");
+  }
+
+  @override
+  void carnivoro() {
+    print("$nome pode ou não ser Carnivoro.");
+  }
+}
+
+//Herança
+class Lobo extends Animal {
+  Lobo(nome, idade, tipo):super(nome, idade, tipo);
+  @override
+  void barulho() {
+	print("$nome está Uivando...");
+  }
+  @override
+  void carnivoro() {
+	print("$nome É carnivoro...");
+  }
+}
+
+class Ovelha extends Animal {
+  Ovelha(nome, idade, tipo):super(nome, idade, tipo);
+  @override
+  void barulho() {
+	print("$nome está Balindo...");
+  }
+  @override
+  void carnivoro() {
+	print("$nome É Vegetariana...");
+  }
+}
+
+void main() {
+  Lobo lobo1 = Lobo("Lobo",2,"selvagem");
+  lobo1.barulho();
+  lobo1.carnivoro();
+  
+  Ovelha ovelha1  = Ovelha("Ovelha",2,"domesticada");
+  ovelha1.barulho();
+  ovelha1.carnivoro();
+}
